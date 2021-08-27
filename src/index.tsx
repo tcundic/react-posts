@@ -9,7 +9,7 @@ import App from './app/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App greeting={process.env.REACT_APP_GREETING || ""} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

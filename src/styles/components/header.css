@@ -1,0 +1,23 @@
+header, .navbar {
+  background-color: var(--app-header-bg);
+  color: var(--app-white);
+}
+
+.navbar-item {
+  color: var(--app-white);
+}
+
+.navbar-brand .navbar-item:hover,
+.navbar-brand .navbar-item:focus {
+  color: var(--app-white);
+}
+
+.navbar-menu .navbar-item:hover,
+.navbar-menu .navbar-item:focus {
+  color: var(--app-white);
+  background-color: var(--app-color-1);
+}
+
+header img {
+  max-height: 5.2rem;
+}

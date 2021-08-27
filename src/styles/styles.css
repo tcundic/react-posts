@@ -1,3 +1,4 @@
 @import '~bulma/css/bulma.min.css';
 @import './base/_settings.css';
 @import './base/_base.css';
+@import './components/header.css';

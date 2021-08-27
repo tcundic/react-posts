@@ -16,3 +16,7 @@ h1, h2 {
 h2 {
   font-size: 2.5rem;
 }
+
+.home-page-logo {
+  max-height: 40vw;
+}
