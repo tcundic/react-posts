@@ -1,0 +1,1 @@
+export const greet = (greeting: string, componentName: string): void => console.log(`${greeting} ${componentName}`);

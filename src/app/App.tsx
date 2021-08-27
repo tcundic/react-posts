@@ -4,10 +4,11 @@ import logo2 from '../assets/logo2.svg';
 import { navItems, greeting } from '../config';
 
 import Header from '../components/Header';
+import {greet} from "../utils/helperFunctions";
 
 const App = () => {
 
-    useEffect(() => console.log(`${greeting} ${App.name}`));
+    useEffect(() => greet(greeting, App.name));
 
     const title: string = "REACT";
 

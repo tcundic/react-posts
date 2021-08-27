@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render App correctly 1`] = `
+<div>
+  <Header
+    greeting="Hello from"
+    logo="logo.svg"
+    navItems={
+      Array [
+        Object {
+          "title": "Posts",
+          "url": "/posts",
+        },
+      ]
+    }
+    title="REACT"
+  />
+  <div
+    className="container"
+  >
+    <img
+      alt="logo.svg"
+      className="home-page-logo"
+      src="logo2.svg"
+    />
+  </div>
+</div>
+`;

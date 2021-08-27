@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {greet} from "../utils/helperFunctions";
 
 const Header = (
     {greeting, navItems, logo, title}:
@@ -9,7 +10,7 @@ const Header = (
             title: string
         }) => {
 
-    useEffect(() => console.log(`${greeting} ${Header.name}`));
+    useEffect(() => greet(greeting, Header.name));
 
     const [isMenuOpened, setIsMenuOpened] = useState(false);
 

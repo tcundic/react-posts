@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<header>
+  <div
+    className="container"
+  >
+    <nav
+      className="navbar"
+    >
+      <div
+        className="navbar-brand mr-6"
+      >
+        <a
+          className="navbar-item"
+          href="/"
+        >
+          <img
+            alt="react-logo"
+            className="app-logo"
+            src="./logo"
+          />
+          React app
+        </a>
+        <div
+          className="navbar-burger"
+          data-target="navbar-menu"
+          onClick={[Function]}
+        >
+          <span />
+          <span />
+          <span />
+        </div>
+      </div>
+      <div
+        className="navbar-menu "
+        id="navbar-menu"
+      >
+        <div
+          className="navbar-end"
+        >
+          <a
+            className="navbar-item"
+            href="/item1"
+            key="/item1"
+          >
+            Item1
+          </a>
+          <a
+            className="navbar-item"
+            href="/item2"
+            key="/item2"
+          >
+            Item2
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+`;
