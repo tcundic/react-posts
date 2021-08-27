@@ -12,10 +12,18 @@ header, .navbar {
   color: var(--app-white);
 }
 
+.navbar-menu {
+  background-color: var(--app-header-bg);
+}
+
 .navbar-menu .navbar-item:hover,
 .navbar-menu .navbar-item:focus {
   color: var(--app-white);
   background-color: var(--app-color-1);
+}
+
+.navbar-burger {
+  color: var(--app-white);
 }
 
 header img {
