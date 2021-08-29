@@ -11,9 +11,9 @@ exports[`should render Header correctly 1`] = `
       <div
         className="navbar-brand mr-6"
       >
-        <a
+        <NavLink
           className="navbar-item"
-          href="/"
+          to="/"
         >
           <img
             alt="react-logo"
@@ -21,7 +21,7 @@ exports[`should render Header correctly 1`] = `
             src="./logo"
           />
           React app
-        </a>
+        </NavLink>
         <div
           className="navbar-burger"
           data-target="navbar-menu"
@@ -39,20 +39,22 @@ exports[`should render Header correctly 1`] = `
         <div
           className="navbar-end"
         >
-          <a
+          <NavLink
+            activeClassName="active-item"
             className="navbar-item"
-            href="/item1"
             key="/item1"
+            to="/item1"
           >
             Item1
-          </a>
-          <a
+          </NavLink>
+          <NavLink
+            activeClassName="active-item"
             className="navbar-item"
-            href="/item2"
             key="/item2"
+            to="/item2"
           >
             Item2
-          </a>
+          </NavLink>
         </div>
       </div>
     </nav>

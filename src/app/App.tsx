@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import logo from '../assets/logo.svg';
-import logo2 from '../assets/logo2.svg';
-import { navItems, greeting } from '../config';
+import {routes, greeting} from '../config';
 
 import Header from '../components/Header';
 import {greet} from "../utils/helperFunctions";
+import Routes from "../components/Routes";
 
 const App = () => {
 
@@ -13,12 +13,14 @@ const App = () => {
     const title: string = "REACT";
 
     return (
-        <div>
-            <Header greeting={greeting} logo={logo} title={title} navItems={navItems}/>
-            <div className="container">
-                <img src={logo2} alt={logo} className="home-page-logo" />
+        <React.StrictMode>
+            <div>
+                <Header greeting={greeting} logo={logo} title={title} navItems={routes}/>
+                <div className="container">
+                    <Routes routes={routes} greeting={greeting} />
+                </div>
             </div>
-        </div>
+        </React.StrictMode>
     );
 }
 

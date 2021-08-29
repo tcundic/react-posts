@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import {NavLink} from "react-router-dom";
 import {greet} from "../utils/helperFunctions";
+import Route from "../interfaces/Route";
 
 const Header = (
     {greeting, navItems, logo, title}:
         {
             greeting: string,
-            navItems: [{ title: string, url: string }],
+            navItems: [Route],
             logo: string,
             title: string
         }) => {
@@ -19,11 +21,12 @@ const Header = (
             <div className="container">
                 <nav className="navbar">
                     <div className="navbar-brand mr-6">
-                        <a className="navbar-item" href="/">
+                        <NavLink className="navbar-item" to="/">
                             <img src={logo} className="app-logo" alt="react-logo"/>
                             {title}
-                        </a>
-                        <div className="navbar-burger" data-target="navbar-menu" onClick={() => setIsMenuOpened(prevState => !prevState)}>
+                        </NavLink>
+                        <div className="navbar-burger" data-target="navbar-menu"
+                             onClick={() => setIsMenuOpened(prevState => !prevState)}>
                             <span></span>
                             <span></span>
                             <span></span>
@@ -32,9 +35,10 @@ const Header = (
                     <div id="navbar-menu" className={`navbar-menu ${isMenuOpened ? 'is-active' : ''}`}>
                         <div className="navbar-end">
                             {navItems.map(item =>
-                                <a className="navbar-item" href={item.url} key={item.url}>
+                                <NavLink key={item.url} to={item.url} className="navbar-item"
+                                         activeClassName="active-item">
                                     {item.title}
-                                </a>
+                                </NavLink>
                             )}
                         </div>
                     </div>

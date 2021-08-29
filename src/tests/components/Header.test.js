@@ -3,8 +3,9 @@ import Header from "../../components/Header";
 import { mount, shallow } from 'enzyme';
 import { expect as chaiExpect } from "chai";
 import toJson from "enzyme-to-json";
-import navItems from "../fixtures/navItems";
+import navItems from "../fixtures/routes";
 import * as Greet from "../../utils/helperFunctions";
+import { BrowserRouter } from "react-router-dom";
 
 const greeting = "Hello from";
 const title = "React app";
@@ -18,7 +19,7 @@ test('should render Header correctly', () => {
 
 test('should print greeting', () => {
     const greetSpy = jest.spyOn(Greet, 'greet');
-    const wrapper = mount(<Header greeting={greeting} title={title} logo={logo} navItems={navItems} />);
+    const wrapper = mount(<BrowserRouter><Header greeting={greeting} title={title} logo={logo} navItems={navItems} /></BrowserRouter>);
     expect(greetSpy).toHaveBeenLastCalledWith(greeting, name);
 });
 

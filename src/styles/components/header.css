@@ -22,6 +22,10 @@ header, .navbar {
   background-color: var(--app-color-1);
 }
 
+.navbar-menu .navbar-item.active-item {
+  background-color: var(--app-color-1);
+}
+
 .navbar-burger {
   color: var(--app-white);
 }
