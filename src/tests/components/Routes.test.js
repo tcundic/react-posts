@@ -7,7 +7,7 @@ import routes, { Component1, Component2 } from "../fixtures/routes";
 import { BrowserRouter, MemoryRouter, Route } from "react-router-dom";
 
 const greeting = "Hello from";
-const name = "Routes";
+const name = Routes.name;
 
 test('should render Routes correctly', () => {
     const wrapper = shallow(<Routes routes={routes} greeting={greeting}/>);
@@ -15,7 +15,7 @@ test('should render Routes correctly', () => {
     expect(wrapper.find(Route)).toHaveLength(4);
 });
 
-test('should print greeting', () => {
+test('should print Routes greeting', () => {
     const greetSpy = jest.spyOn(Greet, 'greet');
     const wrapper = mount(<BrowserRouter><Routes routes={routes} greeting={greeting}/></BrowserRouter>);
     expect(greetSpy).toHaveBeenLastCalledWith(greeting, name);

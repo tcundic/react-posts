@@ -12,7 +12,11 @@ const Routes = ({routes, greeting}: { routes: [IRoute], greeting: string}) => {
     return (
         <Switch>
             <Route exact path="/" render={() => <img src={logo2} alt={logo} className="home-page-logo"/>}/>
-            {routes.map((route: IRoute) => <Route path={route.url} component={route.component} key={route.url}/> )}
+            {routes.map((route: IRoute) => {
+                const Component = route.component;
+                return <Route path={route.url} component={() => <Component greeting={greeting} />} key={route.url}/>
+            }
+            )}
             <Route render={() => <Redirect to="/"/>}/>
         </Switch>
     )

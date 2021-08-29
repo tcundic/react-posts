@@ -1,5 +1,10 @@
+import {useEffect} from "react";
+import {greet} from "../utils/helperFunctions";
 
-const Posts = () => {
+const Posts = ({greeting}: {greeting: string}) => {
+
+    useEffect(() => greet(greeting, Posts.name));
+
     return (
         <div>POSTS</div>);
 };

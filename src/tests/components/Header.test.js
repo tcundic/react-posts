@@ -10,14 +10,14 @@ import { BrowserRouter } from "react-router-dom";
 const greeting = "Hello from";
 const title = "React app";
 const logo = "./logo";
-const name = "Header";
+const name = Header.name;
 
 test('should render Header correctly', () => {
     const wrapper = shallow(<Header greeting={greeting} title={title} logo={logo} navItems={navItems} />);
     expect(toJson(wrapper)).toMatchSnapshot();
 });
 
-test('should print greeting', () => {
+test('should print Header greeting', () => {
     const greetSpy = jest.spyOn(Greet, 'greet');
     const wrapper = mount(<BrowserRouter><Header greeting={greeting} title={title} logo={logo} navItems={navItems} /></BrowserRouter>);
     expect(greetSpy).toHaveBeenLastCalledWith(greeting, name);
