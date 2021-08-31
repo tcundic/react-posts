@@ -2,3 +2,5 @@
 @import './base/_settings.css';
 @import './base/_base.css';
 @import './components/header.css';
+@import './components/posts.css';
+@import './components/postlist.css';

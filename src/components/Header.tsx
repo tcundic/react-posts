@@ -12,7 +12,7 @@ const Header = (
             title: string
         }) => {
 
-    useEffect(() => greet(greeting, Header.name));
+    useEffect(() => greet(greeting, Header.name), [greeting]);
 
     const [isMenuOpened, setIsMenuOpened] = useState(false);
 
@@ -35,7 +35,7 @@ const Header = (
                     <div id="navbar-menu" className={`navbar-menu ${isMenuOpened ? 'is-active' : ''}`}>
                         <div className="navbar-end">
                             {navItems.map(item =>
-                                <NavLink key={item.url} to={item.url} className="navbar-item"
+                                item.isInHeader && <NavLink key={item.url} to={item.url} className="navbar-item"
                                          activeClassName="active-item">
                                     {item.title}
                                 </NavLink>

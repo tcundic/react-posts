@@ -8,7 +8,7 @@ import Routes from "../components/Routes";
 
 const App = () => {
 
-    useEffect(() => greet(greeting, App.name));
+    useEffect(() => greet(greeting, App.name), []);
 
     const title: string = "REACT";
 

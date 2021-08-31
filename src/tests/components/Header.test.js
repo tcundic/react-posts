@@ -19,7 +19,7 @@ test('should render Header correctly', () => {
 
 test('should print Header greeting', () => {
     const greetSpy = jest.spyOn(Greet, 'greet');
-    const wrapper = mount(<BrowserRouter><Header greeting={greeting} title={title} logo={logo} navItems={navItems} /></BrowserRouter>);
+    mount(<BrowserRouter><Header greeting={greeting} title={title} logo={logo} navItems={navItems} /></BrowserRouter>);
     expect(greetSpy).toHaveBeenLastCalledWith(greeting, name);
 });
 

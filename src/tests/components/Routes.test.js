@@ -12,12 +12,12 @@ const name = Routes.name;
 test('should render Routes correctly', () => {
     const wrapper = shallow(<Routes routes={routes} greeting={greeting}/>);
     expect(toJson(wrapper)).toMatchSnapshot();
-    expect(wrapper.find(Route)).toHaveLength(4);
+    expect(wrapper.find(Route)).toHaveLength(5);
 });
 
 test('should print Routes greeting', () => {
     const greetSpy = jest.spyOn(Greet, 'greet');
-    const wrapper = mount(<BrowserRouter><Routes routes={routes} greeting={greeting}/></BrowserRouter>);
+    mount(<BrowserRouter><Routes routes={routes} greeting={greeting}/></BrowserRouter>);
     expect(greetSpy).toHaveBeenLastCalledWith(greeting, name);
 });
 

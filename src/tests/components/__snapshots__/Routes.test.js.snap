@@ -18,6 +18,11 @@ exports[`should render Routes correctly 1`] = `
     path="/item2"
   />
   <Route
+    component={[Function]}
+    key="/item2"
+    path="/item2"
+  />
+  <Route
     render={[Function]}
   />
 </Switch>

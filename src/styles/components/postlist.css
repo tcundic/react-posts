@@ -1,0 +1,40 @@
+
+.posts-list {
+    --app-post-comment-border: 1px solid #b9b9b9;
+    --app-post-comment-background: #EAEAEA;
+}
+
+.posts-list > div {
+    margin-bottom: 3rem;
+}
+
+.posts-list .navbar-item:hover,
+.posts-list .navbar-item:focus {
+    color: var(--app-color-2);
+    background-color: transparent;
+}
+
+.posts-list .navbar-item {
+    padding-bottom: 0;
+    color: var(--app-color-2);
+}
+
+.posts-list .post-username-caption {
+    font-size: 1.3rem;
+}
+
+.posts-list .padding-x {
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+.posts-list .post-comment {
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    border: var(--app-post-comment-border);
+    background-color: var(--app-post-comment-background);
+    border-radius: .5rem;
+}

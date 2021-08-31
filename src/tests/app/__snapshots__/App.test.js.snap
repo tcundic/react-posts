@@ -10,6 +10,7 @@ exports[`should render App correctly 1`] = `
         Array [
           Object {
             "component": [Function],
+            "isInHeader": true,
             "title": "Posts",
             "url": "/posts",
           },
@@ -26,6 +27,7 @@ exports[`should render App correctly 1`] = `
           Array [
             Object {
               "component": [Function],
+              "isInHeader": true,
               "title": "Posts",
               "url": "/posts",
             },

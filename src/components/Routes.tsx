@@ -7,7 +7,7 @@ import {greet} from "../utils/helperFunctions";
 
 const Routes = ({routes, greeting}: { routes: [IRoute], greeting: string}) => {
 
-    useEffect(() => greet(greeting, Routes.name));
+    useEffect(() => greet(greeting, Routes.name), [greeting]);
 
     return (
         <Switch>

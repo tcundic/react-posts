@@ -15,6 +15,6 @@ test('should render App correctly', () => {
 
 test('should print App greeting', () => {
     const greetSpy = jest.spyOn(Greet, 'greet');
-    const wrapper = mount(<BrowserRouter><App/></BrowserRouter>);
+    mount(<BrowserRouter><App/></BrowserRouter>);
     expect(greetSpy).toHaveBeenLastCalledWith(greeting, name);
 });

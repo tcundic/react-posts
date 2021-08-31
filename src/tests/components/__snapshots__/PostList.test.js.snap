@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PostList correctly 1`] = `
+<div
+  className="posts-list mt-6"
+>
+  <div
+    key="1"
+  >
+    <NavLink
+      className="navbar-item"
+      to="/post/1"
+    >
+      <h2>
+        Post 1
+      </h2>
+    </NavLink>
+    <div
+      className="post-username-caption padding-x"
+    >
+      @
+      user 1
+    </div>
+    <h3
+      className="padding-x mt-4"
+    >
+      Comments
+    </h3>
+    <div
+      className="post-comment padding-x"
+      key="1-1"
+    >
+      comment 1
+    </div>
+    <div
+      className="post-comment padding-x"
+      key="1-2"
+    >
+      comment 2
+    </div>
+  </div>
+  <div
+    key="2"
+  >
+    <NavLink
+      className="navbar-item"
+      to="/post/2"
+    >
+      <h2>
+        Post 2
+      </h2>
+    </NavLink>
+    <div
+      className="post-username-caption padding-x"
+    >
+      @
+      user 2
+    </div>
+    <h3
+      className="padding-x mt-4"
+    >
+      Comments
+    </h3>
+  </div>
+</div>
+`;

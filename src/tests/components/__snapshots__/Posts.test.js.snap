@@ -1,7 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Posts correctly 1`] = `
-<div>
-  POSTS
+<div
+  className="mt-6 mx-6"
+>
+  <div
+    className="posts-header"
+  >
+    <h1>
+      Posts
+    </h1>
+    <input
+      onChange={[Function]}
+      placeholder="Enter username"
+      type="text"
+      value=""
+    />
+  </div>
+  <PostList
+    greeting="Hello from"
+    posts={Array []}
+  />
 </div>
 `;
