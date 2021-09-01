@@ -7,7 +7,7 @@ const Header = (
     {greeting, navItems, logo, title}:
         {
             greeting: string,
-            navItems: [Route],
+            navItems: Route[],
             logo: string,
             title: string
         }) => {

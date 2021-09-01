@@ -14,6 +14,12 @@ exports[`should render App correctly 1`] = `
             "title": "Posts",
             "url": "/posts",
           },
+          Object {
+            "component": [Function],
+            "isInHeader": false,
+            "title": "Post",
+            "url": "/post/:id",
+          },
         ]
       }
       title="REACT"
@@ -30,6 +36,12 @@ exports[`should render App correctly 1`] = `
               "isInHeader": true,
               "title": "Posts",
               "url": "/posts",
+            },
+            Object {
+              "component": [Function],
+              "isInHeader": false,
+              "title": "Post",
+              "url": "/post/:id",
             },
           ]
         }

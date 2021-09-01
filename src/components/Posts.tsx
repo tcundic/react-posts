@@ -11,9 +11,7 @@ const Posts = ({greeting}: {greeting: string}) => {
     const [filteredPosts, setFilteredPosts] = useState<Post[]>(posts);
     const [username, usernameInput] = useFilter({greeting, type: "text", placeholder: "Enter username"});
 
-    useEffect(() => {
-        greet(greeting, Posts.name);
-    }, [greeting]);
+    useEffect(() => greet(greeting, Posts.name), [greeting]);
 
     useEffect(() => {
         getPosts().then((posts: Post[]) => {

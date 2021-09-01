@@ -1,0 +1,15 @@
+.post-comment {
+    --app-post-comment-border: 1px solid #b9b9b9;
+    --app-post-comment-background: #EAEAEA;
+}
+
+.post-comment {
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    border: var(--app-post-comment-border);
+    background-color: var(--app-post-comment-background);
+    border-radius: .5rem;
+}

@@ -5,7 +5,7 @@ import React, {useEffect} from "react";
 import IRoute from "../interfaces/Route"
 import {greet} from "../utils/helperFunctions";
 
-const Routes = ({routes, greeting}: { routes: [IRoute], greeting: string}) => {
+const Routes = ({routes, greeting}: { routes: IRoute[], greeting: string}) => {
 
     useEffect(() => greet(greeting, Routes.name), [greeting]);
 

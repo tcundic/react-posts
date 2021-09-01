@@ -1,9 +1,11 @@
 import Posts from "./components/Posts";
 import Route from "./interfaces/Route";
+import Post from "./components/Post";
 
-export const routes: [Route] =
+export const routes: Route[] =
     [
-        {title: 'Posts', url: '/posts', component: Posts, isInHeader: true}
+        {title: 'Posts', url: '/posts', component: Posts, isInHeader: true},
+        {title: 'Post', url: '/post/:id', component: Post, isInHeader: false}
     ];
 
 export const greeting: string = process.env.REACT_APP_GREETING || '';

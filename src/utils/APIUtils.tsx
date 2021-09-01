@@ -24,7 +24,7 @@ export function getPosts(): Promise<Post[]> {
 
 export function getPostById(id: number): Promise<Post> {
     return request({
-        url: `${apiEndpoint}post/${id}`,
+        url: `${apiEndpoint}posts/${id}`,
         method: 'GET'
     });
 }
